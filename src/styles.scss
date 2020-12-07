@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+1. $bg-main: #FBF5F5; 
+2. $text-main: #000000
+3. #00000029 - lightgrey
+4. #15A0BC - blue
+5. #0B505E - dark-blue
+6. #FFFFFF - white
+7. #707070 - grey
+8. #FFFFFF00 - less-white
+9. #FEDF45 - yellow
+10. #23E60D - green
+11. #7070701A - extra-light
+12. #F9E8E8 - light-red
+*/
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$bg-main: #FBF5F5;
+$text-main: #000000;
+$color-primary: #15A0BC;
+$color-primary-dark: #0B505E;
+$color-grey: #707070;
+$extra-light:#7070701A; 
+$light-red: #F9E8E8;
+$lightgrey: #00000029;
+
+
+body {
+  // import font
+  font-family: Montserrat;
+}
+
+.font-alternate {
+  font-family: Montserrat Alternates;
+}
+.font-magneto {
+  font-family: magneto, sans-serif;
+  text-shadow: 0px 3px 6px #00000029;
+}
+.font-bold {
+  font-weight: 900;
+}
+.font-size-md {
+  font-size: 1.3em;
+}
+
+.custom-bg-primary {
+  background-color: $bg-main;
+}
+.custom-bg-secondary {
+  background-color: linear-gradient($color-primary, $color-primary-dark);
+}
+.custom-color-primary {
+  color: $color-primary;
+}
+.custom-icon-shadow {
+  filter: drop-shadow(0px 4px 8px grey);
+}
+
+.bdr {
+  border: 1px solid #000;
+}
+
+#page-container {
+  // position: relative;
+  // min-height: 100vh;
+}
+#content-wrap {
+  padding: 0;
+  // position: relative;
+  // padding-bottom: 2.5rem;    /* Footer height */
+  // padding-bottom: 100%;    /* Footer height */
+}
+
+#footer {
+  // position: absolute;
+  // bottom: 0;
+  // height: 100vh;
+  width: 100%;
+  height: max-content;            /* Footer height */
+}
+.footer-pill {
+  display: block;
+  width: 5%;
+  border: 0.05px solid $color-grey;
+}
+.footerContent {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 4em;
+}
+.footerContent-details { 
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.footer-open-card {
+  grid-row: 2;
+  grid-column: 1 / 3;
+  width: 100%;
+}
+.footer-map-area {
+  box-sizing: content-box;
+  height: auto;
+}
+#footer-map {
+  max-width: 462px;
+  // max-height: 596px;
+  max-height: fit-content;
+  height: fit-content;
+  background: $extra-light 0% 0% no-repeat padding-box;
+}
+.footer-open-card {
+  background-color: $light-red;
+  box-shadow: 0px 3px 6px $lightgrey;
+}
+.bdr {
+  border: 1px solid #000;
+}

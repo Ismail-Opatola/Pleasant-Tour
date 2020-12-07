@@ -1,0 +1,23 @@
+<a class="card text-center custom-card" href="/{{cardData.link}}">
+  <img class="card-img h-100" src="{{cardData.img}}" alt="Card image" />
+  <div class="card-img-overlay card-cta" *ngIf="!tourCard">
+    <a href="/{{cardData.link}}" class="btn mt-auto mx-auto btn-lg btn-light px-4">
+      {{ cardData.title }}
+    </a>
+  </div>
+  <div class="card-img-overlay card-cta" *ngIf="tourCard">
+    <div class="card-details mt-auto text-light text-left">
+      <h5 class="display-6 py-2">{{ cardData.title }}</h5>
+      <p>
+        <fa-icon [icon]="faPlane" class="custom-icon-shadow mr-2"></fa-icon>
+        {{ cardData.destination }}
+      </p>
+      <p>
+        <fa-icon [icon]="faTag" class="text-success custom-icon-shadow mr-2"></fa-icon> {{ cardData.price }}
+      </p>
+      <p>
+        <fa-icon [icon]="faStar" class="text-warning custom-icon-shadow mr-2"></fa-icon> {{ cardData.rating}}
+      </p>
+    </div>
+  </div>
+</a>

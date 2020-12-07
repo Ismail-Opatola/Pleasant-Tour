@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---------------------------------------------
+
+1. Create project, repository
+2. Install bootstrap jquery popper.js
+   1. `npm i bootstrap jquery popper.js --save`
+   2. import **bootstrap** and **jquery** in `angular.json` file
+3. import google fonts - Montserrat, Montserrat Alternates, **Magneto**
+4. install font awesome
+   1. npm install --save @fortawesome/fontawesome-svg-core
+   2. npm install --save @fortawesome/free-solid-svg-icons
+   3. npm install --save @fortawesome/free-brands-svg-icons
+   4. npm install @fortawesome/angular-fontawesome@0.7.x
+5. Configure App-routing - HomeComponent
+6. create `Navbar`
+7. Create Component - Home
+8. Create homepage `Showcase`
+9. Create component - `SearchBar`
+10. Create Tour Card
+11. Create Service - tourService

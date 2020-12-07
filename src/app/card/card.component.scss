@@ -1,0 +1,30 @@
+.custom-card {
+  width: 100%;
+  min-height: 400px;
+  height: 100%;
+  // transition: transform .3s;
+  // transform: translateY(-15px);
+
+  & img {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+  } 
+}
+
+.custom-card:hover {
+  cursor: pointer;
+  // transition: transform .3s;
+}
+
+
+.card-cta {
+  display: inline-flex;
+
+  & a {
+    border-radius: 40px;
+  }
+}
+
+.c-card-img {
+
+}

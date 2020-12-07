@@ -1,0 +1,22 @@
+.search-form {
+  background: transparent linear-gradient(270deg, #15A0BC 0%, #0B505E 100%) 0% 0% no-repeat padding-box; 
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid grey;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  overflow: hidden;
+  
+  & button {
+    border-radius: 0;
+    align-self: stretch;
+    color: #15A0BC;
+    font-weight: bold;
+    
+  }
+  & hr {
+    display: inline-block;
+    border: 1px solid #fff;
+  }
+}

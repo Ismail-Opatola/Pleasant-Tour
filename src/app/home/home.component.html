@@ -1,0 +1,122 @@
+<section class="section showcase jumbotron">
+  <!-- <div class="jumbotron jumbotron-fluid"> -->
+  <div class="container-fluid my-auto" id="showcase-text">
+    <h1 class="display-4 font-magneto">Dare to Live <br>the Life You’ve Always Wanted</h1>
+    <p class="lead">Find Your Dream Trip on Pleasant Tour</p>
+  </div>
+  <!-- </div> -->
+</section>
+<section class="searchbar-box">
+  <div class="searchbar">
+    <app-search-bar></app-search-bar>
+  </div>
+</section>
+<section class="section-2">
+
+  <div class="section-2-recommendation">
+    <div class="container section-2-content mx-auto">
+      <div class="row">
+        <div class="content-heading col">
+          <h2 class="custom-color-primary font-weight-bold font-size-md ">What's Your Life Style?</h2>
+          <small>Find A Dream Destination That Accord with your Muse</small>
+        </div>
+        <div class="col-2 align-right text-ar">
+          <a href="/#" class="custom-color-primary font-weight-bold font-size-md">SHOW ALL</a>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <app-card [cardData]="data" class="col-sm-6 col-md p-0 mb-4 " *ngFor="let data of categories"></app-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section-2-content mx-auto custom-mb">
+      <div class="row">
+        <div class="content-heading col">
+          <h2 class="custom-color-primary font-weight-bold font-size-md ">BEST OFFERS</h2>
+          <small>Checkout Our Top Rated Destinations</small>
+        </div>
+        <div class="col-2 align-right text-ar">
+          <a href="/#" class="custom-color-primary font-weight-bold font-size-md">SHOW ALL</a>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <app-card [cardData]="data" [tourCard]="tourCard" class="col-sm-6 col-md p-0 mb-4"
+            *ngFor="let data of bestOffers"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-3 p-0 my-5">
+  <app-video></app-video>
+</section>
+
+<section class="section-4 text-center cta-about">
+  <h4 class="my-4 custom-color-primary">Renowned Tour Service Since 1960</h4>
+  <p class="my-5">
+    Tourism researchers and developers say that there are several key elements that are essential to the success of a
+    tourist destination. These are traditionally referred to as the 5A’s - including; access, accommodation,
+    attractions, activities and amenities.
+  </p>
+
+  <a href="/#" class="btn btn-lg text-light px-3">More About Us</a>
+</section>
+
+<section class="section-5 cta-why">
+  <h4 class="my-5">Why You Should Choose Pleasant Tour</h4>
+
+  <div class="cta-why-details row text-center">
+    <div class="col">
+      <fa-icon [icon]="faSearch" class="display-4 text-secondary"></fa-icon>
+
+      <p class="font-bold mt-4">AFFORDABLE PRICE GUARANTEE</p>
+
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore</p>
+    </div>
+    <div class="col">
+      <fa-icon [icon]="faMap" class="display-4 text-secondary"></fa-icon>
+
+      <p class="font-bold mt-4">WIDE VERIETY OF DESTINATION</p>
+
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore</p>
+    </div>
+    <div class="col">
+      <fa-icon [icon]="faThumbsUp" class="p-3 display-4 text-secondary"></fa-icon>
+
+      <p class="font-bold mt-4">WIDE VERIETY OF DESTINATION</p>
+
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-6 testimonials">
+  <h4 class="mb-5">TESTIMONIALS</h4>
+
+  <div class="cta-why-details row text-center">
+    <div class="col">
+      <p>Best experience of my life. I don't know how to explain it. The destination, activities, sceneries where out of
+        this world experience for me. I never wanted the trip to be over.</p>
+      <p class="font-bold mt-2">JOHN DOE</p>
+    </div>
+    <div class="col">
+      <p>Best experience of my life. I don't know how to explain it. The destination, activities, sceneries where out of
+        this world experience for me. I never wanted the trip to be over.</p>
+      <p class="font-bold mt-2">JOHN DOE</p>
+    </div>
+    <div class="col">
+      <p>Best experience of my life. I don't know how to explain it. The destination, activities, sceneries where out of
+        this world experience for me. I never wanted the trip to be over.</p>
+      <p class="font-bold mt-2">JOHN DOE</p>
+    </div>
+  </div>
+</section>
