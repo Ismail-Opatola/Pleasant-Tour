@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../api.service';
+
+interface ParamQuery {
+  id: string;
+}
 
 @Component({
   selector: 'app-tour-page',
@@ -7,9 +13,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TourPageComponent implements OnInit {
 
-  constructor() { }
+  tourData: any;
+  paramQuery: ParamQuery;
+
+  constructor(private activatedRoute: ActivatedRoute, public apiService: ApiService) {
+    this.activatedRoute.queryParams.subscribe(data => {
+      this.paramQuery = {
+        id: data.id,
+      };
+    });
+   }
 
   ngOnInit(): void {
+  this.apiService.getTour(this.paramQuery.id).subscribe(data => {
+    this.tourData = data;
+  });
   }
 
+  handleTourBooking(tourData: any): void {
+    // TODO: navigate to booking form page
+  }
 }

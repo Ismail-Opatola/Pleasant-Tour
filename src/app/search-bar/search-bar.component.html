@@ -1,37 +1,42 @@
 <form class="search-form container row mx-auto pr-0 shadow">
+  <!-- <form class="search-form container row mx-auto pr-0 shadow" #searchForm="ngForm" (ngSubmit)="goToSearch(searchForm)"> -->
   <div class="form-group col border-right my-auto py-3">
     <label for="FormControlSelect1">Destination</label>
     <select class="form-control" id="FormControlSelect1" aria-placeholder="Destination">
       <option value="all">All</option>
-      <option value="">Antactica</option>
-      <option>Europe</option>
-      <option>Morroco</option>
-      <option>Pacific Ocean</option>
-      <option>China</option>
+      <option value="antatica">Antactica</option>
+      <option value="europe">Europe</option>
+      <option value="morroco">Morroco</option>
+      <option value="pcific_ocean">Pacific Ocean</option>
+      <option value="china">China</option>
     </select>
   </div>
+
   <!-- <hr> -->
   <div class="form-group col border-right my-auto py-3">
     <label for="FormControlSelect2">Type</label>
     <select class="form-control" id="FormControlSelect2">
-      <option value="">All</option>
-      <option>Cruise & Voyage</option>
-      <option>European Tours</option>
-      <option>Architectural Tour</option>
-      <option>Mountain Tour</option>
-      <option>Beach Tours</option>
+      <option value="all">All</option>
+      <option value="luxurious_cruise_and_voyage">Cruise & Voyage</option>
+      <option value="european_tours">European Tours</option>
+      <option value="architectural_tours">Architectural Tour</option>
+      <option value="mountain_tours">Mountain Tour</option>
+      <option value="beach_tours">Beach Tours</option>
     </select>
   </div>
+
   <!-- <hr> -->
   <div class="form-group col my-auto py-3">
     <label for="FormControlSelect3">Budget</label>
     <select class="form-control" id="FormControlSelect3">
-      <option value="">All</option>
-      <option>500,000</option>
-      <option>500,000 - 1,5000,000</option>
-      <option>1,5000,000 - 2,000,000</option>
-      <option>2,000,000 - 3,000,000</option>
+      <option value="All">All</option>
+      <option value="500000">500,000</option>
+      <option value="1500000">1,500,000</option>
+      <option value="2000000">2,000,000</option>
+      <option value="3000000">3,000,000</option>
+      <option value="4000000">4,000,000</option>
+      <option value="5000000">5,000,000</option>
     </select>
   </div>
-  <button type="submit" class="btn btn-lg w-100 p-2 bg-white col">FIND</button>
+  <button type="submit" class="btn btn-lg w-100 p-2 bg-white col" (click)="goToSearch({})">FIND</button>
 </form>

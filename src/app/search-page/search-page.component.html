@@ -1,0 +1,22 @@
+<section class="searchbar-box">
+  <div class="searchbar">
+    <app-search-bar></app-search-bar>
+  </div>
+</section>
+<section>
+  <h2>Results Found</h2>
+
+  <div class="container section-2-content mx-auto custom-mb">
+    <div class="">
+      <div class="content-heading">
+        <h2 class="custom-color-primary font-weight-bold font-size-md "> {{ resultLength }} Results Found</h2>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="searchResultCards">
+        <app-card [cardData]="data" [tourCard]="tourCard" class="col" *ngFor="let data of searchResults"></app-card>
+      </div>
+    </div>
+  </div>
+</section>

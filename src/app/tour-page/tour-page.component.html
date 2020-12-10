@@ -1,1 +1,45 @@
-<p>tour-page works!</p>
+<section>
+  <img src="assets/img/{{ tourData.imgUrl }}" alt="tourData.imgUrl">
+
+  <h1 class="title">{{ tourData.title }}</h1>
+</section>
+<section>
+  <div class="row">
+    <div class="col">{{ tourData.price }}</div>
+    <div class="col">{{ tourData.avearageRating }} </div>
+    <div class="col"><button (click)="handleTourBooking(tourData)">Book Tour</button></div>
+  </div>
+</section>
+<section>
+  <div class="row row-col-2">
+    <div class="col">Details</div>
+    <div class="col">{{ tourData.details }}</div>
+  </div>
+  <div class="row row-col-2">
+    <div class="col">Access</div>
+    <div class="col">{{ tourData.access }} </div>
+  </div>
+  <div class="row row-col-2">
+    <div class="col">Accomodation</div>
+    <div class="col">{{ tourData.accomodation }}</div>
+  </div>
+  <div class="row row-col-2">
+    <div class="col">Attractions</div>
+    <div class="col">{{ tourData.attractions}}</div>
+  </div>
+  <div class="row row-col-2">
+    <div class="col">Activities</div>
+    <div class="col">{{ tourData.activities}}</div>
+  </div>
+  <div class="row row-col-2">
+    <div class="col">Amenities</div>
+    <div class="col">{{ tourData.amenities}}</div>
+  </div>
+</section>
+<section>
+  <iframe src="{{ tourData.map }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+    aria-hidden="false" tabindex="0"></iframe>
+</section>
+<section class="section-3 p-0 my-5">
+  <app-video></app-video>
+</section>

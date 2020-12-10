@@ -8,9 +8,9 @@
   display: flex;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
-#showcase-text {}
-.section {}
-.section-1 {}
+// #showcase-text {}
+// .section {}
+// .section-1 {}
 .searchbar-box {
   position: relative;
   
@@ -52,7 +52,7 @@
     font-weight: 100;
   }
 
-  & p { }
+  // & p { }
 
   & a {
     background: transparent linear-gradient(270deg, #15A0BC 0%, #0B505E 100%) 0% 0% no-repeat padding-box;

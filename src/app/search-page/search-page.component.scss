@@ -1,0 +1,6 @@
+.searchResultCards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}
+

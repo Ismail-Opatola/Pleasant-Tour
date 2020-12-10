@@ -10,3 +10,26 @@ Tour service provider website built with Angular, Bootstrap, SCSS, Json-server, 
 - Source Code: <https://github.com/Ismail-Opatola/Pleasant-Tour> 
 - Report: NULL
 - Group: ADSE 752
+
+## Getting Started
+
+    git clone https://github.com/Ismail-Opatola/pleasant-tour-db
+
+    cd pleasant-tour/
+    
+    npm install
+
+## pleasant-tour - db.json
+
+start server on a seperate tab
+
+    json-server --watch db.json
+    <!-- json-server db.json --routes routes.json -->
+
+server endpoint: http://localhost:3000/
+
+start client
+
+    ng serve
+
+client endpoint: http://localhost:4200/
