@@ -26,7 +26,7 @@ start server on a seperate tab
     json-server --watch db.json
     <!-- json-server db.json --routes routes.json -->
 
-server endpoint: http://localhost:3000/
+Test the json-server endpoint: http://localhost:3000/
 
 start client
 
