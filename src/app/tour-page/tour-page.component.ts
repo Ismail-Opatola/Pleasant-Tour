@@ -26,7 +26,7 @@ export class TourPageComponent implements OnInit {
 
   ngOnInit(): void {
   this.apiService.getTour(this.paramQuery.id).subscribe(data => {
-    this.tourData = data;
+    this.tourData = data[0];
     console.log(data);
   });
   }

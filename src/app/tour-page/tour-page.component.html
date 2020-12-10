@@ -1,5 +1,5 @@
 <section>
-  <img src="assets/img/{{ tourData.imgUrl }}" alt="tourData.imgUrl">
+  <img src="assets/img/{{tourData.imgUrl}}" alt="tourData.imgUrl">
 
   <h1 class="title">{{ tourData.title }}</h1>
 </section>
@@ -11,33 +11,33 @@
   </div>
 </section>
 <section>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Details</div>
     <div class="col">{{ tourData.description.details }}</div>
   </div>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Access</div>
     <div class="col">{{ tourData.description.access }} </div>
   </div>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Accomodation</div>
     <div class="col">
       {{ tourData.description.accomodation }}</div>
   </div>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Attractions</div>
     <div class="col">{{ tourData.description.attractions}}</div>
   </div>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Activities</div>
     <div class="col">{{ tourData.description.activities}}</div>
   </div>
-  <div class="row row-col-2">
+  <div class="row row-col-2 my-2">
     <div class="col">Amenities</div>
     <div class="col">{{ tourData.description.amenities }}</div>
   </div>
 </section>
-<section>
+<section class="section-3 container">
   <iframe src="{{ tourData.description.map }}" width="600" height="450" frameborder="0" style="border:0;"
     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </section>
