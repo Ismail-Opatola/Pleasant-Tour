@@ -17,7 +17,7 @@ export class TourPageComponent implements OnInit {
   paramQuery: ParamQuery;
 
   constructor(private activatedRoute: ActivatedRoute, public apiService: ApiService) {
-    this.activatedRoute.queryParams.subscribe(data => {
+    this.activatedRoute.params.subscribe(data => {
       this.paramQuery = {
         id: data.id,
       };
@@ -27,6 +27,7 @@ export class TourPageComponent implements OnInit {
   ngOnInit(): void {
   this.apiService.getTour(this.paramQuery.id).subscribe(data => {
     this.tourData = data;
+    console.log(data);
   });
   }
 

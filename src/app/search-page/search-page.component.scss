@@ -2,5 +2,19 @@
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
+.searchbar-box{
+  margin-top: 3em;
+}
+
+.resultsSection{
+  & h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+  }
+}

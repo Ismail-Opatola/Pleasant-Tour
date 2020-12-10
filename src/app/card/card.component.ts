@@ -10,7 +10,6 @@ export class CardComponent implements OnInit {
   @Input() cardData;
   @Input() tourCard: boolean;
 
-
   constructor() { }
 
   faPlane = faPlane;

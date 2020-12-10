@@ -3,8 +3,8 @@
     <app-search-bar></app-search-bar>
   </div>
 </section>
-<section>
-  <h2>Results Found</h2>
+
+<section class="resultsSection">
 
   <div class="container section-2-content mx-auto custom-mb">
     <div class="">
@@ -15,8 +15,9 @@
 
     <div class="container mt-5">
       <div class="searchResultCards">
-        <app-card [cardData]="data" [tourCard]="tourCard" class="col" *ngFor="let data of searchResults"></app-card>
+        <app-card [cardData]="data" [tourCard]="!tourCard" class="col" *ngFor="let data of searchResults"></app-card>
       </div>
     </div>
   </div>
+  <div class="spacing my-5"></div>
 </section>
