@@ -22,6 +22,9 @@ Tour service provider website built with Angular, Bootstrap, SCSS, Json-server, 
 ## pleasant-tour - db.json
 
 start server on a seperate tab
+    
+    // install json-server globally
+    npm install json-server -g
 
     json-server --watch db.json
     <!-- json-server db.json --routes routes.json -->
